@@ -55,7 +55,8 @@ public class Practice implements MethodInterface{
 	@Override
 	public String left(String input, int num) {
 		// TODO input 의 첫 글자 부터 num 개의 글자를 return 한다.
-		return null;
+		String result = input.substring(0, num);
+		return result;
 	}
 
 	@Override
