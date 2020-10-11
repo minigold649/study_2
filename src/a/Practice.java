@@ -62,13 +62,15 @@ public class Practice implements MethodInterface{
 	@Override
 	public String right(String input, int num) {
 		// TODO input 의 마지막 글자 부터 num 개의 글자를 return 한다.
-		return null;
+		String result = input.substring(9 , num);
+		return result;
 	}
 
 	@Override
 	public String mid(String input, int start, int num) {
 		// TODO input 의 start 번째 글자부터 num 개의 글자를 return 한다.
-		return null;
+		String result = input.substring(start , num);
+		return result;
 	}
 	
 	public static void main(String[] args) {
