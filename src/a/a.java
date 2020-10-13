@@ -25,6 +25,7 @@ public class a {
 				isPalindrom = true;
 			} else {
 				isPalindrom = false;
+				break;
 			}
 		}
 		

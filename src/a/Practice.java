@@ -55,6 +55,7 @@ public class Practice implements MethodInterface{
 	@Override
 	public String left(String input, int num) {
 		// TODO input 의 첫 글자 부터 num 개의 글자를 return 한다.
+		System.out.println("left 에서 num = " + num);
 		String result = input.substring(0 , num);
 		return result;
 	}
@@ -62,13 +63,16 @@ public class Practice implements MethodInterface{
 	@Override
 	public String right(String input, int num) {
 		// TODO input 의 마지막 글자 부터 num 개의 글자를 return 한다.
-		String result = input.substring(9 , 9 + num);
+		System.out.println("right 에서 num = " + num);
+		String result = input.substring(input.length() - num);
 		return result;
 	}
 
 	@Override
 	public String mid(String input, int start, int num) {
 		// TODO input 의 start 번째 글자부터 num 개의 글자를 return 한다.
+		System.out.println("mid 에서 start = " + start);
+		System.out.println("mid 에서 num = " + num);
 		String result = input.substring(start , start + num);
 		return result;
 	}
